@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.svm import SVR
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_squared_error as rmse
-from DataEngineering2 import *
+from DataEngineering import *
 
 df = pd.read_csv('Burmasupermarket_sales.csv')
 df = dataEngineering(df)

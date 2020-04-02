@@ -25,7 +25,7 @@ def dataEngineering(df):
 	df = df.rename(columns = {'Gender':'isMale'})
 
 	df = df[['City','ProductLine','Month','Day','Hour',
-	         'Quantity','isMember','isMale','GrandTotal']] \
+	         'isMember','isMale','GrandTotal']] \
 	       .groupby(['City','ProductLine','Month','Day','Hour']).sum() \
 	       .reset_index()
 
