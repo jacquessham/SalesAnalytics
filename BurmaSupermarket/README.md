@@ -11,7 +11,7 @@ There are the features of this data set:
 	<li></li>
 </ul>
 There are 1000 rows of transactions. The data is roughly balance by city, gender, customer type, product line, and payment type. The data set is small across 3 months to captures all the features.
-<br>
+<br><br>
 Some features are wrongly labeled or not useful:
 <br>
 1. Cogs - This column is supposed to be Grand Total. If you take this column times 1.05, the number equals to Total. So this number is supposed to be the grand total of the transaction before tax.<br>
