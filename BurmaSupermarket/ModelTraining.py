@@ -13,7 +13,7 @@ df = dataEngineering(df)
 X = df.drop(columns=['GrandTotal'])
 y = df['GrandTotal']
 
-kf = KFold(n_splits=5)
+kf = KFold(n_splits=5, shuffle=True)
 lr_acc = []
 svr_acc = []
 dt_acc = []
@@ -22,7 +22,6 @@ lr_rmse =[]
 svr_rmse =[]
 dt_rmse= []
 
-counter = 1
 for train_index, test_index in kf.split(df):
 	X_train, X_test = X.iloc[train_index,:], X.iloc[test_index,:]
 	y_train, y_test = y.iloc[train_index], y.iloc[test_index]

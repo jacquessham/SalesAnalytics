@@ -13,7 +13,7 @@ df = dataEngineering(df)
 X = df.drop(columns=['GrandTotal'])
 y = df['GrandTotal']
 
-kf = KFold(n_splits=5)
+kf = KFold(n_splits=5, shuffle=True)
 lr_acc = []
 svr_acc = []
 dt_acc = []
