@@ -44,6 +44,8 @@ Reference:
 
 Logistic Regression, SVC, decision tree, time-series. (Organizating)
 
+K-fold set Shuffle=True (Key)
+
 ## Thought
 
 (Organizating)
