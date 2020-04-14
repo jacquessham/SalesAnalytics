@@ -23,24 +23,13 @@ df = df[['Date','Temperature','Fuel_Price','MarkDown1','MarkDown2',
                                'MarkDown3': 'sum', 'MarkDown4': 'sum',
                                'MarkDown5':'sum', 'Weekly_Sales':'sum'}) \
        .reset_index()
+
 # Drop Date for now, and extract features and response
-"""
 df_noDate = df.drop('Date', axis=1)
 X = df_noDate.drop('Weekly_Sales', axis=1)
 y = df_noDate['Weekly_Sales']
 X = df_noDate.drop('Weekly_Sales', axis=1)
 y = df_noDate['Weekly_Sales']
-"""
-df['Date'] = pd.to_datetime(df['Date'], format='%d/%m/%Y')
-df['Month'] = df['Date'].dt.month
-df = pd.concat([df,pd.get_dummies(df['Month'],prefix='Month',
-                                     dtype=bool)],axis=1)
-df['Day'] = df['Date'].dt.month
-df = pd.concat([df,pd.get_dummies(df['Day'],prefix='Day',
-                                     dtype=bool)],axis=1)
-
-X = df.drop(['Weekly_Sales','Date'], axis=1)
-y = df['Weekly_Sales']
 
 kf = KFold(n_splits=10, shuffle=True, random_state=42)
 lr_acc = []
