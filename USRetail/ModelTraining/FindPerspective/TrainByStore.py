@@ -8,7 +8,7 @@ from sklearn.metrics import mean_squared_error as rmse
 
 
 # Read all data and join the data 
-data_features = pd.read_csv('../../Data/Original/features_dataset.csv')
+data_features = pd.read_csv('../../Data/Refined/features_dataset_refined.csv')
 data_sales = pd.read_csv('../../Data/Original/sales_dataset.csv')
 data_sales = data_sales[['Store','Dept','Date','Weekly_Sales']] \
                        .groupby(['Store','Date']).sum().reset_index()
@@ -20,8 +20,9 @@ df = data_features.merge(data_sales[['Store','Date','Weekly_Sales']] \
 df = df[df['Store']==1]
 
 
-# Split data to features and label                             
-X = df.drop(['Weekly_Sales','Date',], axis=1)
+# Split data to features and label
+print(df.columns)                         
+X = df.drop(['Weekly_Sales','Date','Store'], axis=1)
 y = df['Weekly_Sales']
 
 

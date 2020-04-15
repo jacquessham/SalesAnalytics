@@ -7,7 +7,7 @@ import statsmodels.api as sm
 
 
 # Read all data and join the data 
-data_features = pd.read_csv('../../Data/Original/features_dataset.csv')
+data_features = pd.read_csv('../../Data/Refined/features_dataset_refined.csv')
 data_features = data_features.drop(['MarkDown1','MarkDown2','MarkDown3',
 	                                'MarkDown4','MarkDown5'],axis=1)
 data_sales = pd.read_csv('../../Data/Original/sales_dataset.csv')

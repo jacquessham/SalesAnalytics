@@ -8,25 +8,17 @@ from sklearn.metrics import mean_squared_error as rmse
 
 
 # Read all data and join together
-data_features = pd.read_csv('../../Data/Original/features_dataset.csv')
+data_features = pd.read_csv('../../Data/Refined/features_dataset_refined.csv')
 data_sales = pd.read_csv('../../Data/Original/sales_dataset.csv')
 data_stores = pd.read_csv('../../Data/Original/stores_dataset.csv')
 df = data_sales.merge(data_features.drop('IsHoliday', axis=1),
                       on=['Store','Date'], how='left')
 df = df.merge(data_stores, on='Store', how='left')
 df = df.drop('Type', axis=1)
+
 # Try Store 1 and Department 1
 df = df[(df['Store']==1) & (df['Dept']==1)].fillna(0)
-
-df['Date'] = pd.to_datetime(df['Date'], format='%d/%m/%Y')
-df['Month'] = df['Date'].dt.month
-df = pd.concat([df,pd.get_dummies(df['Month'],prefix='Month',
-                                     dtype=bool)],axis=1)
-df['Day'] = df['Date'].dt.month
-df = pd.concat([df,pd.get_dummies(df['Day'],prefix='Day',
-                                     dtype=bool)],axis=1)
-
-X = df.drop(['Weekly_Sales','Date'], axis=1)
+X = df.drop(['Weekly_Sales','Date','Store','Dept'], axis=1)
 y = df['Weekly_Sales']
 
 kf = KFold(n_splits=10, shuffle=True, random_state=42)

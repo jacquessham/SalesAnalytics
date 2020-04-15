@@ -8,7 +8,7 @@ from sklearn.metrics import mean_squared_error as rmse
 
 
 # Read data from joinned data
-data_features = pd.read_csv('../../Data/Original/features_dataset.csv')
+data_features = pd.read_csv('../../Data/Refined/features_dataset_refined.csv')
 data_sales = pd.read_csv('../../Data/Original/sales_dataset.csv')
 data_stores = pd.read_csv('../../Data/Original/stores_dataset.csv')
 
