@@ -33,7 +33,7 @@ Finding the model accuracy. Use R-square to determine.
 * ~60% R-square
 
 ## Verdict
-Since Model 2 based on each store is ~60% and the other models received negative r-square, choose the Model 2 - model based on each Store.
+Since Model 2 based on each store is ~58% and the other models received negative r-square, choose the Model 2 - model based on each Store.
 <br><br>
 But how to obtain the department-wide sales for each store for the following year?
 <br>
