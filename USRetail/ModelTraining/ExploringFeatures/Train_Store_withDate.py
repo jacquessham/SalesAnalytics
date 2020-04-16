@@ -35,8 +35,11 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1,
 dt = Dtr(random_state=42).fit(X_train, y_train)
 dt_acc = dt.score(X_test, y_test)
 dt_rmse = rmse(y_test, dt.predict(X_test))
-print(dt_acc)
-print(dt_rmse)
+
+print('*******Model with Date********')
+print('R-square is:',dt_acc)
+print('RMSE is:',dt_rmse)
+print('******************************')
 
 # Train model without Date as features
 # Split data to features and label
@@ -53,5 +56,31 @@ y_noDate = df_noDate['Weekly_Sales']
 dt_noDate = Dtr(random_state=42).fit(X_train_noDate,y_train_noDate)
 dt_acc_noDate = dt_noDate.score(X_test_noDate, y_test_noDate)
 dt_rmse_noDate = rmse(y_test_noDate,dt_noDate.predict(X_test_noDate))
-print(dt_acc_noDate)
-print(dt_rmse_noDate)
+
+print('*****Model without Date*******')
+print('R-square is:', dt_acc_noDate)
+print('RMSE is:', dt_rmse_noDate)
+print('******************************')
+
+# Save the result in text file
+f = open('Results/DateResult.txt','w')
+# Write R-square
+f.write('*******Model with Date********\n')
+f.write('The R-square is: ')
+f.write(str(round(dt_acc,4)))
+f.write('\n')
+# Write Rmse
+f.write('The RMSE is: ')
+f.write(str(round(dt_rmse,4)))
+f.write('\n')
+f.write('******************************\n\n')
+f.write('*****Model without Date*******\n')
+f.write('The R-square is: ')
+f.write(str(round(dt_acc_noDate,4)))
+f.write('\n')
+# Write Rmse
+f.write('The RMSE is: ')
+f.write(str(round(dt_rmse_noDate,4)))
+f.write('\n')
+f.write('******************************')
+f.close()

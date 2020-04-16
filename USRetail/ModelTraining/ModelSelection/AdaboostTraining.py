@@ -30,5 +30,20 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1,
 adaboost = AdaBoostRegressor(random_state=42).fit(X_train, y_train)
 adaboost_acc = adaboost.score(X_test, y_test)
 adaboost_rmse = rmse(y_test, adaboost.predict(X_test))
-print(adaboost_acc)
-print(adaboost_rmse)
+
+# Print result in R-squ
+print('The R-square is:', adaboost_acc)
+# Print result in RMSE if needed
+print('The RMSE is:', adaboost_rmse)
+
+# Save the result in text file
+f = open('Results/AdaboostResult.txt','w')
+# Write R-square
+f.write('Adaptive Boosting Regressor\n')
+f.write('The R-square is: ')
+f.write(str(round(adaboost_acc,4)))
+f.write('\n')
+# Write Rmse
+f.write('The RMSE is: ')
+f.write(str(round(adaboost_rmse,4)))
+f.close()

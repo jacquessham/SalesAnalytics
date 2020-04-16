@@ -20,8 +20,7 @@ df = data_features.merge(data_sales[['Store','Date','Weekly_Sales']] \
 df = df[df['Store']==1]
 
 
-# Split data to features and label
-print(df.columns)                         
+# Split data to features and label                     
 X = df.drop(['Weekly_Sales','Date','Store'], axis=1)
 y = df['Weekly_Sales']
 
@@ -40,6 +39,40 @@ for train_index, test_index in kf.split(df):
 	lr_rmse.append(rmse(y_test, lr.predict(X_test)))
 
 
-print(lr_acc, np.mean(lr_acc))
-print(lr_rmse, np.mean(lr_rmse))
+# Print result in R-squ
+print('The R-square of each fold:')
+for rsqu in lr_acc:
+  print(rsqu)
+print('The average of the accuracy is', np.mean(lr_acc))
+print('-------------------------------------------------')
+# Print result in RMSE if needed
+print('The RMSE of each fold:')
+for acc in lr_rmse:
+  print(acc)
+print('The average of the accuracy is', np.mean(lr_rmse))
+
+# Save the result in text file
+f = open('Results/TrainByStoreResult.txt','w')
+# Write R-square
+f.write('The R-square of each fold:\n')
+for fold in range(len(lr_acc)):
+    line = str(fold+1)
+    line += '. '
+    line += str(lr_acc[fold])
+    line += '\n'
+    f.write(line)
+f.write('The average of the accuracy is: ')
+f.write(str(round(np.mean(lr_acc),4)))
+f.write('\n\n')
+# Write Rmse
+f.write('The RMSE of each fold:\n')
+for fold in range(len(lr_rmse)):
+    line = str(fold+1)
+    line += '. '
+    line += str(lr_rmse[fold])
+    line += '\n'
+    f.write(line)
+f.write('The average of the RMSE is: ')
+f.write(str(round(np.mean(lr_rmse))))
+f.close()
 

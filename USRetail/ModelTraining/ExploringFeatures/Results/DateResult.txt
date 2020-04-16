@@ -1,0 +1,9 @@
+*******Model with Date********
+The R-square is: 0.8248
+The RMSE is: 71178620627.6684
+******************************
+
+*****Model without Date*******
+The R-square is: 0.8396
+The RMSE is: 65150884226.8635
+******************************

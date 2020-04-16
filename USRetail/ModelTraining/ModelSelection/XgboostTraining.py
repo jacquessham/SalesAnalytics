@@ -30,5 +30,20 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1,
 xgboost = Xgboost(random_state=42).fit(X_train, y_train)
 xgboost_acc = xgboost.score(X_test, y_test)
 xgboost_rmse = rmse(y_test, xgboost.predict(X_test))
-print(xgboost_acc)
-print(xgboost_rmse)
+
+# Print result in R-squ
+print('The R-square is:', xgboost_acc)
+# Print result in RMSE if needed
+print('The RMSE is:', xgboost_rmse)
+
+# Save the result in text file
+f = open('Results/xgboostResult.txt','w')
+# Write R-square
+f.write('Gradient Boosting Regressor\n')
+f.write('The R-square is: ')
+f.write(str(round(xgboost_acc,4)))
+f.write('\n')
+# Write Rmse
+f.write('The RMSE is: ')
+f.write(str(round(xgboost_rmse,4)))
+f.close()

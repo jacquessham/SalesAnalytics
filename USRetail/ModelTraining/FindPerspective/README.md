@@ -61,8 +61,9 @@ All models used [refined feature data](/) and [original sales data]()
 * Negative R-square
 
 ## Result
+You may find the result written in text file in the [Results folder](/Results)
 * Model 1 (Overal Perspective) has negative R-square
-* Model 2 (Store Perspective) has ~60% R-square
+* Model 2 (Store Perspective) has ~58% R-square
 * Model 3 (Department Perspective) has negative R-square
 
 ## Verdict

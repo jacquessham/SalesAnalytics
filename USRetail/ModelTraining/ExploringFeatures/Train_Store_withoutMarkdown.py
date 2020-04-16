@@ -28,8 +28,10 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1,
 dt = Dtr(random_state=42).fit(X_train, y_train)
 dt_acc = dt.score(X_test, y_test)
 dt_rmse = rmse(y_test, dt.predict(X_test))
-print(dt_acc)
-print(dt_rmse)
+print('*****Model with Markdowns*****')
+print('R-Square:',dt_acc)
+print('RMSE:',dt_rmse)
+print('******************************')
 
 # Train model without markdowns as features
 # Split data to features and label
@@ -49,5 +51,30 @@ dt_acc_noMarkdown = dt_noMarkdown.score(X_test_noMarkdown,
 	                                                y_test_noMarkdown)
 dt_rmse_noMarkdown = rmse(y_test_noMarkdown,
                             dt_noMarkdown.predict(X_test_noMarkdown))
-print(dt_acc_noMarkdown)
-print(dt_rmse_noMarkdown)
+print('***Model without Markdowns****')
+print('R-Square:', dt_acc_noMarkdown)
+print('RMSE:', dt_rmse_noMarkdown)
+print('******************************')
+
+# Save the result in text file
+f = open('Results/MarkdownResult.txt','w')
+# Write R-square
+f.write('*******Model with Date********\n')
+f.write('The R-square is: ')
+f.write(str(round(dt_acc,4)))
+f.write('\n')
+# Write Rmse
+f.write('The RMSE is: ')
+f.write(str(round(dt_rmse,4)))
+f.write('\n')
+f.write('******************************\n\n')
+f.write('*****Model without Date*******\n')
+f.write('The R-square is: ')
+f.write(str(round(dt_acc_noMarkdown,4)))
+f.write('\n')
+# Write Rmse
+f.write('The RMSE is: ')
+f.write(str(round(dt_rmse_noMarkdown,4)))
+f.write('\n')
+f.write('******************************')
+f.close()

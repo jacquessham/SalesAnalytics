@@ -46,5 +46,8 @@ The files [AdaboostTraining.py](/AdaboostTraining.py) and [XgboostTraining.py](/
 * Adaboost: 83%
 * XGboost: 86%
 
+## Results
+You may find the results written in text file [here](/Results)
+
 ## Verdict
 Since the model built with decision tree regressor achieve the highest R-square, 92%, we will train the final model with decision tree regressor. You may find the next phase [here](../ExploringFeatures)
