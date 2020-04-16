@@ -10,11 +10,8 @@ from sklearn.metrics import mean_squared_error as rmse
 # Read all data and join together
 data_features = pd.read_csv('../../Data/Refined/features_dataset_refined.csv')
 data_sales = pd.read_csv('../../Data/Original/sales_dataset.csv')
-data_stores = pd.read_csv('../../Data/Original/stores_dataset.csv')
 df = data_sales.merge(data_features.drop('IsHoliday', axis=1),
                       on=['Store','Date'], how='left')
-df = df.merge(data_stores, on='Store', how='left')
-df = df.drop('Type', axis=1)
 
 # Try Store 1 and Department 1
 df = df[(df['Store']==1) & (df['Dept']==1)].fillna(0)
@@ -34,5 +31,41 @@ for train_index, test_index in kf.split(df):
 	lr_rmse.append(rmse(y_test, lr.predict(X_test)))
 
 
-print(lr_acc, np.mean(lr_acc))
-print(lr_rmse, np.mean(lr_rmse))
+# Print result in R-squ
+print('The R-square of each fold:')
+for rsqu in lr_acc:
+  print(rsqu)
+print('The average of the accuracy is', np.mean(lr_acc))
+print('-------------------------------------------------')
+# Print result in RMSE if needed
+print('The RMSE of each fold:')
+for acc in lr_rmse:
+  print(acc)
+print('The average of the accuracy is', np.mean(lr_rmse))
+
+
+# Save the result in text file
+f = open('Results/TrainByDeptResult.txt','w')
+# Write R-square
+f.write('The R-square of each fold:\n')
+for fold in range(len(lr_acc)):
+    line = str(fold+1)
+    line += '. '
+    line += str(lr_acc[fold])
+    line += '\n'
+    f.write(line)
+f.write('The average of the accuracy is: ')
+f.write(str(round(np.mean(lr_acc),4)))
+f.write('\n\n')
+# Write Rmse
+f.write('The RMSE of each fold:\n')
+for fold in range(len(lr_rmse)):
+    line = str(fold+1)
+    line += '. '
+    line += str(lr_rmse[fold])
+    line += '\n'
+    f.write(line)
+f.write('The average of the RMSE is: ')
+f.write(str(round(np.mean(lr_rmse))))
+f.close()
+
