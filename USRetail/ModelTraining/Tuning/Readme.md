@@ -10,10 +10,10 @@ Use grid search to train the adaptive boosting models to find which hyperparamet
 <br><br>
 The range of max_depth is 3-10,15,20,25,30,35,40,45,50.
 <br><br>
-The file [DtTuning.py](/DtTuning.py) will obtain the R-square and RMSE of each model and save to [TuningResult.csv](/TuningResult.csv).
+The file [DtTuning.py](DtTuning.py) will obtain the R-square and RMSE of each model and save to [TuningResult.csv](TuningResult.csv).
 
 ## Results
-Once we have R-square and RMSE for each model, we save the data to [TuningResult.csv](/TuningResult.csv). As the result, the model with max_depth = 3 achieve the lowest RMSE. We will use this hyperparameters for the final prediction model. 
+Once we have R-square and RMSE for each model, we save the data to [TuningResult.csv](TuningResult.csv). As the result, the model with max_depth = 3 achieve the lowest RMSE. We will use this hyperparameters for the final prediction model. 
 
 ## Next Step
 We will build the final prediction model, you may find the model [here](../../PredictionModel)

@@ -12,11 +12,11 @@ If we choose the route of training one prediction model in a given store, we wil
 <br><br>
 In this phase, we will use linear regression model because this is the baseline algorithm. We will use R-square to determine the accuracy. We will choose the perspective whichever perspective has the highest R-square.
 <br><br>
-You may find more detail of the model training phase in this [folder](/FindPerspective). As the result, the Store Perspective achieve the highest accuracy. So we will choose Store Perspective.
+You may find more detail of the model training phase in this [folder](FindPerspective). As the result, the Store Perspective achieve the highest accuracy. So we will choose Store Perspective.
 
 
 ## Model Selection: Find the best algorithm for Prediction Model
-The goal of this phase is to the find which prediction model built by different algorithm has the highest accuracy. You may find more detail [here](/ModelSelection).
+The goal of this phase is to the find which prediction model built by different algorithm has the highest accuracy. You may find more detail [here](ModelSelection).
 <br><br>
 We have used the following algorithms:
 1. Linear Regression
@@ -29,7 +29,7 @@ We have used the following algorithms:
 As the result, the model built by decision tree regressor achieve the highest accuracy, 92%. The final prediction model will be built by this algorithm.
 
 ## Exploring Features: Markdown1-5 and Date
-The goal of this phase is to understand feature effect on weekly sales, mainly Markdown1-5 and Date. You may find more detail [here](/ExploringFeatures).
+The goal of this phase is to understand feature effect on weekly sales, mainly Markdown1-5 and Date. You may find more detail [here](ExploringFeatures).
 <br><br>
 As the result, including Markdown1-5 and Date as features did not help improving prediction accuracy.
 

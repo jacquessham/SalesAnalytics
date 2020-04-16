@@ -17,7 +17,7 @@ The folder consists 3 files.
 </ul>
 
 ## Data Used
-All models used [refined feature data](/) and [original sales data]()
+All models used [refined feature data](../../Data/Refined/features_dataset_refined.csv) and [original sales data](../../Data/Oringinal/features_dataset.csv). You may find the detail in the [Data folder](../../Data)
 
 ## Package Used
 * Pandas
@@ -61,7 +61,7 @@ All models used [refined feature data](/) and [original sales data]()
 * Negative R-square
 
 ## Result
-You may find the result written in text file in the [Results folder](/Results)
+You may find the result written in text file in the [Results folder](Results)
 * Model 1 (Overal Perspective) has negative R-square
 * Model 2 (Store Perspective) has ~58% R-square
 * Model 3 (Department Perspective) has negative R-square
@@ -70,5 +70,6 @@ You may find the result written in text file in the [Results folder](/Results)
 Since Model 2 based on each store is ~60% and the other models received negative r-square, choose the Model 2 - model based on each Store.
 <br><br>
 Once we have a model to predict the weekly sales in each store, then we will esimate the sales portion of each department in the store and use the estimated sales portion of each department to predict the weekly sales at the given department in the store.
-<br><br>
+
+## Next Step
 The next step is to find which algorithm to used for the prediction model to achieve better accuracy. You may find more [here](../ModelSelection)

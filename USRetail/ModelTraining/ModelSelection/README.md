@@ -28,12 +28,12 @@ We have the following files:
 * Use 42 for random state, in order to eliminate the randomness
 
 ## Understand how the Features Affect on Weekly Sales in Linear Regression
-The file [FeaturesExplain.py](/FeaturesExplain.py) generates the intepretation of the features used in the linear regression model.
+The file [FeaturesExplain.py](FeaturesExplain.py) generates the intepretation of the features used in the linear regression model.
 <br><br>
 Intepret the features. Coming Soon.
 
 ## Algorithms Comparsion
-The file [AlgoCompare.py](/AlgoCompare.py) compare accuracy on Linear Regression, SVR, Decision Tree Regressor, and Random Forest Regressor models. R-square will be used for evaluation.
+The file [AlgoCompare.py](AlgoCompare.py) compare accuracy on Linear Regression, SVR, Decision Tree Regressor, and Random Forest Regressor models. R-square will be used for evaluation.
 <br><br>
 * Linear Regression: 58%
 * SVR: Negative R-square
@@ -41,13 +41,16 @@ The file [AlgoCompare.py](/AlgoCompare.py) compare accuracy on Linear Regression
 * Random Forest Regressor: 91%
 
 ## Adaptive Boosting Regressor and Gradient Boosting Regressor
-The files [AdaboostTraining.py](/AdaboostTraining.py) and [XgboostTraining.py](/XgboostTraining.py) compare accuracy on Adaptive Boosting Regressor, and Gradient Boosting Regressor.
+The files [AdaboostTraining.py](AdaboostTraining.py) and [XgboostTraining.py](XgboostTraining.py) compare accuracy on Adaptive Boosting Regressor, and Gradient Boosting Regressor.
 <br><br>
 * Adaboost: 83%
 * XGboost: 86%
 
 ## Results
-You may find the results written in text file [here](/Results)
+You may find the results written in text file [here](Results)
 
 ## Verdict
-Since the model built with decision tree regressor achieve the highest R-square, 92%, we will train the final model with decision tree regressor. You may find the next phase [here](../ExploringFeatures)
+Since the model built with decision tree regressor achieve the highest R-square, 92%, we will train the final model with decision tree regressor.
+
+## Next Step
+The next step is exploring features, finding whether some features is useful in the final prediction model. You may find the next phase [here](../ExploringFeatures)

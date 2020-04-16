@@ -4,7 +4,7 @@ This is folder for the final prediction model to predict the department-wide wee
 ## How this Model works
 The model is trained by Temperature, Fuel price, Consumer Price Index, and Unemployment rate from each store with Decision Tree Regressor. The model creates 45 prediction models (Or the number of stores in the retail chain) which predicts the weekly sales of each store. The department weekly sales will be calculated by the store weekly sales average share of that department. In order to predict the weekly sales of each department of each store, simply gather the feature data for each store and the model will return the weekly sales of each department of each store.
 <br><br>
-The training data will be using the [refined feature data set](../Data/Refined/features_dataset_refined.csv) in the [Data/Refined folder](../Data/Refined) and [sales data set](../Original/sales_dataset.csv) in the [Data/Original folder](../Data/Original)
+The training data will be using the [refined feature data set](../Data/Refined/features_dataset_refined.csv) in the [Data/Refined folder](../Data/Refined) and [sales data set](../Data/Original/sales_dataset.csv) in the [Data/Original folder](../Data/Original)
 
 ## Files
 There are 3 files in this folder:
