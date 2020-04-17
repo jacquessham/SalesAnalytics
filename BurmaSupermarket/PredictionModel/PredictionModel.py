@@ -1,5 +1,11 @@
 import pandas as pd
+from sklearn.linear_model import LinearRegression
 
+
+"""
+This function manipulate the data frame to the desired form for model training
+and prediction
+"""
 def dataEngineering(df):
 	# Drop Branch, Tax 5%, GrossMarginPercentage, GrossIncome
 	df = df.drop(columns=['Branch','Tax5%','GrossMarginPercentage','GrossIncome'])
@@ -25,13 +31,14 @@ def dataEngineering(df):
 	df = df.rename(columns = {'Gender':'isMale'})
 
 	df = df[['City','ProductLine','Month','Day','Hour',
-	         'isMember','isMale','GrandTotal']] \
+	         'Quantity','isMember','isMale','GrandTotal']] \
 	       .groupby(['City','ProductLine','Month','Day','Hour']).sum() \
 	       .reset_index()
 
 	# Convert City to one-hot encoding
 	df = pd.concat([df,pd.get_dummies(df['City'],prefix='City',
 		                              dtype=bool)], axis=1)
+
 
 	# Convert Product Line to one-hot encoding
 	df = pd.concat([df,pd.get_dummies(df['ProductLine'],prefix='ProductLine',
@@ -40,3 +47,23 @@ def dataEngineering(df):
 	df = df.drop(columns=['City','ProductLine'])
 
 	return df
+
+# Read data set
+df = pd.read_csv('../Burmasupermarket_sales.csv')
+df = dataEngineering(df)
+# Split data to features and response variable
+features = ['City','Product']
+X = df.drop(columns=['GrandTotal'])
+y = df['GrandTotal']
+# Build the model
+lr = LinearRegression().fit(X, y)
+
+"""
+# Uncomment this block if feature data for prediction is available
+
+df_pred = None # Read feature data for prediction
+df_pred = dataEngineering(df_pred)
+pred = lr.predict(df_pred)
+df_pred.to_csv('SalesPrediction.csv', index=False)
+"""
+

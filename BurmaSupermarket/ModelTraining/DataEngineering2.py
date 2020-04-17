@@ -33,7 +33,7 @@ def dataEngineering(df):
 	df = pd.concat([df,pd.get_dummies(df['City'],prefix='City',
 		                              dtype=bool)], axis=1)
 
-	print(df.info())
+
 	# Convert Product Line to one-hot encoding
 	df = pd.concat([df,pd.get_dummies(df['ProductLine'],prefix='ProductLine',
 		                              dtype=bool)],axis=1)

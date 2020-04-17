@@ -29,8 +29,6 @@ Another goal of this part is to make a prediction model. In this [ModelTraining 
 ## Prediction Model
 This [PredictionModel folder](PredictionModel) consists the code and description of the prediction model on predicting sales. (Coming Soon)
 
-## Report
-Coming Soon
 
 ## Thought
 Coming Soon

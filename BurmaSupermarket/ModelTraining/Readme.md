@@ -52,28 +52,8 @@ Random Forest Regressor: 39%
 <br><br>
 It looks like including quantity as feature is useful on making prediction because the base line models are all receive negative R-square.
 
-## Case 3: Effects on Date and Time
-In this case, we will explore the effect on date and time. Since adding quantity as feature is way useful than the base line models, we will keep "Quantity" as feature. Then, we will exclude the date and time in this case as feature and evaluate the models with the models in Case 2. We will use the following features:
-* City, One-hot-encoding
-* ProductionLine, One-hot-encoding
-* isMember, boolean
-* isMale, One-hot-encoding
-* Quantity, integer
-<br>
-There are 2 files to train the prediction model for this case:
-* ModelTraining3.py - Driver program
-* DataEngineer3.py - Helper program to do data engineer
-<br><br>
-The process of training this model is the same as ModelTraining.py, expect DataEngineer3.py would include "Quantity" as one of the features and exclude all the columns related to date and time.
-<br><br>
-The result of this model looks like this:<br>
-Linear Regression: Negative R-Square<br>
-SVR: Negative R-Square<br>
-Decision Tree Regressor: 45%<br>
-Random Forest Regressor: 65%
-
 ## Result
-As the result, we find that the model trained with the features used in Case 3 and random forest regressor achieved the highest R-square. We will use those features and that algorithm to build the final prediction model. You may find that model in the [PredictionModel folder](../PredictionModel)
+As the result, we find that the model trained with the features used in Case 2 and linear regression achieved the highest R-square. We will use those features and that algorithm to build the final prediction model. You may find that model in the [PredictionModel folder](../PredictionModel)
 <br><br>
 You may also find the result of accuracy rate of all models trained in this phase in the [Results folder](Results)
 
