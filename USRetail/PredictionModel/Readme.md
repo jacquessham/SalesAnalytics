@@ -12,6 +12,16 @@ There are 3 files in this folder:
 2. Store.py - The code define the store object which train the prediction model and save the results
 3. MacroPrediction.py - The prediction model that predict the Macro data which is not available (Macro data is time-series data)
 
+## Packages Needed
+This is the list of packages used in the application:
+1. Pandas
+2. Numpy
+3. Datetime
+4. Math
+5. Dateutil
+6. Sklearn - Decision Tree Regressor
+7. Facebook Prophet
+
 ## Preparing Feature Data
 Note that the data of the Macro data is time-series data, that the Macro data is needed to be predicted using time-series statistical learning. The file MacroPrediction.py is able to predict the macro data in order to prepare the feature data for predicting the weekly sales of each store. The training data, besides train the prediction model for weekly sales, is also used for predicting future Macro data. MacroPrediction.py is called in USRetailSalesPrediciton.py when preparing feature data for predicting future weekly sales.
 <br><br>
