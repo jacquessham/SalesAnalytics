@@ -30,15 +30,28 @@ The function calculates all the requirements needed in the A/B testing, includin
 The testing kit requires Pandas and Scipy (norm and ttest_ind).
 
 ## Question 1
-abtestingkit.py read the data set and call the the function in A/B Testing kit to receive the p-value of the A/B testing result, as well as the power and the sample size needed to achieve 80% power. 
+Burmasupermarket_abtesting_member.py read the data set and call the the function in A/B Testing kit to receive the p-value of the A/B testing result, as well as the power and the sample size needed to achieve 80% power if the power is less than 80%. 
 <br><br>
 First, we set the null and alternative hypothesis to answer this question. Then we will run Burmasupermarket_abtesting_member.py to get p-value and power. Once we have the p-value and power, we can evaluate null hypothesis and estimate the type II error.
 <br><br>
 Question 1 is: Is the sales from members more than the sales from non-members?<br>
-H<sub>0</sub>: Sales from members is greater than the sales from non-members, Sales<sub>member > Sales<sub>Non-member</sub>
-H<sub>A</sub>: Sales from members is less than the sales from non-members, Sales<sub>member < Sales<sub>Non-member</sub>
+H<sub>0</sub>: Sales from members is greater than the sales from non-members, Sales<sub>member</sub> > Sales<sub>Non-member</sub>
+<br>
+H<sub>A</sub>: Sales from members is less than the sales from non-members, Sales<sub>member</sub> < Sales<sub>Non-member</sub>
+<br><br>
+If we set the significant value is 0.05. The p-value calculated from the file is 0.26 which is greater than the significant value. Therefore, we do not reject the null hypothesis. We can conclude that the sales from members is more than the sales from non-member. Since the power is 90%, the probability of type II error is 10%.
 
-
+## Question 2
+Burmasupermarket_abtesting_hbmale.py read the data set and call the the function in A/B Testing kit to receive the p-value of the A/B testing result, as well as the power and the sample size needed to achieve 80% power if the power is less than 80%. 
+<br><br>
+First, we set the null and alternative hypothesis to answer this question. Then we will run Burmasupermarket_abtesting_member.py to get p-value and power. Once we have the p-value and power, we can evaluate null hypothesis and estimate the type II error.
+<br><br>
+Question 2 is: Is the sales of Health & Beauty from Male more than the sales from Female?<br>
+H<sub>0</sub>: Healthy & Beauty sales from male consumers is greater than the healthy & Beauty sales from female consumers, Sales<sub>male,Health & Beauty</sub> > Sales<sub>female,Health & Beauty</sub>
+<br>
+H<sub>A</sub>: Healthy & Beauty sales from male consumers is less than the sales from non-members, Sales<sub>male,Health & Beauty</sub> < Sales<sub>female,Health & Beauty</sub>
+<br><br>
+If we set the significant value is 0.05. The p-value calculated from the file is 0.06 which is greater than the significant value. Therefore, we do not reject the null hypothesis. We can conclude that the sales from members is more than the sales from non-member. Since the power is 99%, the probability of type II error is 1%.
 
 ## Reference
 <a href="https://towardsdatascience.com/understanding-power-analysis-in-ab-testing-14808e8a1554">Power</a>
