@@ -49,7 +49,7 @@ Finally, let's look at the store size available in the store data set. There are
 <br>
 The size of each store is:
 <br>
-<img src="Size_bar.jpg">
+<img src="Size_Bar.jpg">
 <br>
 The share of each store size in the retail chain looks like this:
 <br>

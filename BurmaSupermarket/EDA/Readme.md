@@ -4,7 +4,7 @@ In this phase, we are going to explore the data insight from the data set of the
 ## Strategy and Files
 We will use Tableau to make some visualization to explore the relationship between features and sales in the data set. Then, we will observe the relationship and correlation to find interesting fact in order to raise questions.
 <br><br>
-In this folder, we have EDA_supermarketsales.twb and 7 images of visualizations. 
+In this folder, we have a Tableau file EDA_supermarketsales.twb and 7 images of visualizations. 
 
 ## Sales per City
 The first step is to find the sales related to City. In this data set, the stores are located in 3 Cities in Burma - Mandalay, Naypyitaw, and Yangon. The date range is between Jan and March in 2019. We ploted 3 line charts which are aligned again date on X-axis.<br>
