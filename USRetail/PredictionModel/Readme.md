@@ -74,3 +74,6 @@ You may find the result in csv files in the [Results folder](/Results)
 
 ## Thought on the Result
 The weekly sales does not vary too much that I suspect the model may be overfitted. There may be more work could be done to make the model is more useful. However, I think this model has achieve our goal making prediction on department-wide weekly sales of all department in all stores. 
+
+## Next Step
+We have achieved the 1st goal of predicting department-wide sales for each store in 2013-2014. The next step is to model the effects of promotion of markdowns on holiday weeks. You may find more detail [here](../MarkdownModel)

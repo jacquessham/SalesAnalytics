@@ -4,26 +4,26 @@ The data comes from "Retail Data Analytics" from <a href="https://www.kaggle.com
 ## The Original files
 The files originate from Kaggle that have not done any data cleansing are saved in the "Original" folder.<br>
 1. Features dataset/Macro data [features_dataset.csv](/Original/features_dataset.csv)
-* Columns:
-** Store - Label for the store
-** Date - The date of week, format: dd/mm/yyyy
-** Temperature - The average temperature in Fehrenheit of the week in the region where the store is located
-** Fuel_Price - The gasoline price in the region where the store is located
-** MarkDown1-5 - Annoymized data related to promotion. The data is only available in 2011 but not available for all store, there are a lot of NA data in these columns
-** CPI - Consumer Price Index
-** Unemployment - Unemployment rate in percentage point
-** IsHoliday - Whether the week is a special holiday week, boolean type
-* The date range of this file is between 2010 and mid-2013, note that sales dataset
-* I call this data set as "Macro data" because the features in this data set describes the macro-view of the store
+* Columns:<br>
+** Store - Label for the store<br>
+** Date - The date of week, format: dd/mm/yyyy<br>
+** Temperature - The average temperature in Fehrenheit of the week in the region where the store is located<br>
+** Fuel_Price - The gasoline price in the region where the store is located<br>
+** MarkDown1-5 - Annoymized data related to promotion. The data is only available in 2011 but not available for all store, there are a lot of NA data in these columns<br>
+** CPI - Consumer Price Index<br>
+** Unemployment - Unemployment rate in percentage point<br>
+** IsHoliday - Whether the week is a special holiday week, boolean type<br>
+* The date range of this file is between 2010 and mid-2013, note that sales dataset<br>
+* I call this data set as "Macro data" because the features in this data set describes the macro-view of the store<br>
 
 2. Sales dataset [sales_dataset.csv](Original/sales_dataset.csv)
-* Columns:
-** Store - Label for the store
-** Dept - Label for the department in a given store
-** Date - The date of week, format: dd/mm/yyyy
-** Weekly_Sales - Sales for the given department of a given store
-** IsHoliday - Whether the week is a special holiday week, boolean type
-* The date range of this file is between 2010 and 2012
+* Columns:<br>
+** Store - Label for the store<br>
+** Dept - Label for the department in a given store<br>
+** Date - The date of week, format: dd/mm/yyyy<br>
+** Weekly_Sales - Sales for the given department of a given store<br>
+** IsHoliday - Whether the week is a special holiday week, boolean type<br>
+* The date range of this file is between 2010 and 2012<br>
 
 3. Store dataset [stores_dataset.csv](Original/stores_dataset.csv)
 * The meta data of the given 45 stores of this retail chain

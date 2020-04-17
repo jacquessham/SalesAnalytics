@@ -27,8 +27,8 @@ There are 1000 rows of transactions. The data is roughly balance by city, gender
 <br><br>
 There are some notes about the features:
 <br>
-* Column "Branch" is the label for "City", both columns are the same
-* Each invoice records the purchase of the same product, the total is unitprice times quantity
+* Column "Branch" is the label for "City", both columns are the same<br>
+* Each invoice records the purchase of the same product, the total is unitprice times quantity<br>
 * Some columns are wrongly labeled, such as Cogs
 <br><br>
 Some features are wrongly labeled or not useful:

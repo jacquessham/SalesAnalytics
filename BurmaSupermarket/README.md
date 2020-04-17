@@ -31,4 +31,9 @@ This [PredictionModel folder](PredictionModel) consists the code and description
 
 
 ## Thought
-Coming Soon
+We have achieved the goals of this part of the project. We have confirmed that the sales fo members is greater than the sales of non-members and health & beauty sales from male consumers is greater. The marketing department may use these finding to focus the efforts on marking promotion on these area. Also we have built a prediction model to predict future sales if the features data set is available. This is useful for the management of this Burma supermarket chain to make sales and budget planning.
+<br><br>
+However, we know that the data set is a selective data set from the full data set. In this prediction model, the observation size in the training model is too small that the prediction model that the accuracy of the prediction model may not be trustworthy. The model may be improved if the prediction model is trained with larger training data set or the full data set. Also, the features available in the training set is not informative enough because there are not a lot of unique features to the observation. I suggest the model would be more useful if more KPI associated with each observation is available.
+
+## Next Part
+In the next part, we will look at a US Retail Chain that we are also looking at the data insights and making prediction model similar to this part. You may click [here](../USRetail) to find more about next part.
