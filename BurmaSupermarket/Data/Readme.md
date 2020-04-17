@@ -26,6 +26,7 @@ There are the features of this data set:
 There are 1000 rows of transactions. The data is roughly balance by city, gender, customer type, product line, and payment type. The data set is small across 3 months to captures all the features.
 <br><br>
 There are some notes about the features:
+<br>
 * Column "Branch" is the label for "City", both columns are the same
 * Each invoice records the purchase of the same product, the total is unitprice times quantity
 * Some columns are wrongly labeled, such as Cogs
