@@ -2,6 +2,7 @@ import pandas as pd
 from scipy.stats import norm
 from scipy.stats import ttest_ind
 
+
 def abtesting(df,group,target,diff=0,alt='equal'):
     df_stats = df[[group, target]].groupby(group) \
                  .agg(['count','mean','var','std']).reset_index()
@@ -25,7 +26,7 @@ def abtesting(df,group,target,diff=0,alt='equal'):
 
     # Power (Probability not having Type II error)
     k = n2*1.0/n1
-    power = norm.sf(1.96-(delta/(sigma_2/n1+sigma_2/n2)**0.5))
+    power = norm.cdf(1.96-(delta/(sigma_2/n1+sigma_2/n2)**0.5))
 
     # Sample size needed to achieve 0.8 power
     n2_needed = (((k**-1+1)*(1.96-0.84)**2)*sigma_2)/delta**2

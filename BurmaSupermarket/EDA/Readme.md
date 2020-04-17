@@ -54,4 +54,4 @@ In this phase, we have raised two phases:
 <br>
 In the next phase, we would conduct A/B testing to answer those questions that might be helpful for future business planning. After the next phase, we would also leverage some insight found in this phase to pick or engineer the features for prediction model training. 
 <br><br>
-You may find the findings and results in the [A/B Testing folder](../ABtesting)
+You may find the findings and results in the <a href="https://github.com/jacquessham/SalesAnalytics/tree/master/BurmaSupermarket/ABtesting">A/B Testing folder</a>
