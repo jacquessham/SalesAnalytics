@@ -11,10 +11,12 @@ We want to use A/B Testing to answer these question:
 First, we will set the hypothesis for each question. In each question, we will manipulate the data and use A/B testing technical to obtain the p-value and decide whether to accept or reject the hypothesis in order to answer the question. Lastly, we will calculate the power to show the probability of Type II error. 
 
 ## Files
-There are 3 files in this folder:
+There are 3 python and 2 result files in this folder:
 * abtestingkit.py - Helper code to conduct A/B testing, return p-value, power, and sample size needed to achieve desired power
 * Burmasupermarket_abtesting_member.py - Driver program conduct A/B testing on answering Question 1 by calling abtestingkit.py
 * Burmasupermarket_abtesting_hbmale.py - Driver program conduct A/B testing on answering Question 2 by calling abtestingkit.py
+* Burmasupermarket_abtesting_hbmale.txt (In Results folder) - Result of Question 1
+* Burmasupermarket_abtesting_member.txt (In Results folder) - Result of Question 2
 
 ## A/B Testing Kit
 The file of abtestingkit.py is the code of "A/B Testing kit". This is a dynamic program which is able to conduct A/B testing with any kind of data set. Once you have set the hypothesis, you may able to pass the data frame to return the p-value, power, and the sample size needed to achieve 80% power. The code only has one function: abtesting(), which required 5 parameters:
@@ -47,11 +49,21 @@ Burmasupermarket_abtesting_hbmale.py read the data set and call the the function
 First, we set the null and alternative hypothesis to answer this question. Then we will run Burmasupermarket_abtesting_member.py to get p-value and power. Once we have the p-value and power, we can evaluate null hypothesis and estimate the type II error.
 <br><br>
 Question 2 is: Is the sales of Health & Beauty from Male more than the sales from Female?<br>
-H<sub>0</sub>: Healthy & Beauty sales from male consumers is greater than the healthy & Beauty sales from female consumers, Sales<sub>male,Health & Beauty</sub> > Sales<sub>female,Health & Beauty</sub>
+H<sub>0</sub>: Healthy & Beauty sales from male consumers is greater than the healthy & Beauty sales from female consumers, Sales<sub>male,<br>
+Health & Beauty</sub> > Sales<sub>female,Health & Beauty</sub>
 <br>
-H<sub>A</sub>: Healthy & Beauty sales from male consumers is less than the sales from non-members, Sales<sub>male,Health & Beauty</sub> < Sales<sub>female,Health & Beauty</sub>
+H<sub>A</sub>: Healthy & Beauty sales from male consumers is less than the sales from non-members,<br>
+ Sales<sub>male,Health & Beauty</sub> < Sales<sub>female,Health & Beauty</sub>
 <br><br>
 If we set the significant value is 0.05. The p-value calculated from the file is 0.06 which is greater than the significant value. Therefore, we do not reject the null hypothesis. We can conclude that the sales from members is more than the sales from non-member. Since the power is 99%, the probability of type II error is 1%.
+
+## Conclusion
+After we have conduct the A/B testing on Question 1 and Quesiton 2. We have concluded with the following finding:
+* The sales from members is more than the sales from non-members
+* The health & beauty sales from male is more than the health & beauty from female
+
+## Next step
+Once we have answered the questions by conducting A/B testing, we will build a prediction model to predict future sales. You may find the model training phase [here](../ModelTraining)
 
 ## Reference
 <a href="https://towardsdatascience.com/understanding-power-analysis-in-ab-testing-14808e8a1554">Power</a>
