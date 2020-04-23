@@ -19,7 +19,7 @@ There are 2 python and 2 result files in this folder:
 * case2result.txt - Result of Question 2
 
 ## A/B Testing Kit
-The file of abtestingkit.py is the code of "A/B Testing kit". This is a dynamic program which is able to conduct A/B testing with any kind of data set. Once you have set the hypothesis, you may able to pass the data frame to return the p-value, power, and the sample size needed to achieve 80% power. The code only has 2 function: abtesting(), and savefile(). abtesting() required 5 parameters:<b4>
+The file of abtestingkit.py is the code of "A/B Testing kit". This is a dynamic program which is able to conduct A/B testing with any kind of data set. Once you have set the hypothesis, you may able to pass the data frame to return the p-value, power, and the sample size needed to achieve 80% power. The code only has 2 function: abtesting(), and savefile(). abtesting() required 5 parameters:
 * df - Data Frame of the data set
 * group - Group of partition in the data set
 * target - The Feature which is tested in the data set
@@ -41,7 +41,7 @@ The data set did not split the customers into low or high income customers. In a
 <br><br>
 First, we set the null and alternative hypothesis to answer this question. Then we will run ussupermarket_abtesting_Y.py to get p-value and power. Once we have the p-value and power, we can evaluate null hypothesis and estimate the type II error.
 <br><br>
-Question 1: Do high-income customers have higher spending score?
+Question 1: Do high-income customers have higher spending score?<br><br>
 H<sub>0</sub>: High-income customers have higher spending score, Spenind Score<sub>High-income</sub> > Sales<sub>Low-Income</sub>, High-Income customers have higher satification
 <br>
 H<sub>A</sub>: High-income customers have lower spending score, Spenind Score<sub>High-income</sub> < Spenind Score<sub>Low-Income</sub>, Low-Income customers have higher satification
@@ -57,7 +57,7 @@ First, we set the null and alternative hypothesis to answer this question. Then 
 <br><br>
 I believe grocery is essential products to the customers, regardless of gender. I would like to verify whether both male and female customers have the same spending score. If the spending score of either gender is higher, it means the supermarket chain sells more products or provide services preferred by one of the genders.
 <br><br>
-Question 2: Do both male and female customers have the same spending score?
+Question 2: Do both male and female customers have the same spending score?<br><br>
 H<sub>0</sub>: Male and Female customers have the same spending score, Spenind Score<sub>Male</sub> = Sales<sub>Female</sub>
 <br>
 H<sub>A</sub>: Male and Female customers have different spending score, Spenind Score<sub>Male</sub> ≠ Spenind Score<sub>Female</sub>
