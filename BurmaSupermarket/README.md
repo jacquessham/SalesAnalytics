@@ -2,8 +2,10 @@
 This is one part of the Sales Analytics Project. The data set is a selective data set on supermarket transactions in 3 different supermarkets in Burma. The goal of this part is to find interesting data insight and make prediction models for this Burma supermarket chain.
 
 ## Goal and Strategy
-* Goal 1: Find interesting data insight
-* Goal 2: Make prediction model to predict future sales 
+<ul>
+<li>Goal 1: Find interesting data insight</li>
+<li>Goal 2: Make prediction model to predict future sales</li>
+</ul>
 <br><br>
 The first step to explore the data insight first by making a lot of visualization on the exploratory data analysis (EDA) phase. Then, we will discuss some of the interesting finding in the visualization first and raise some question(s) for business purpose. We will answer those question(s) by conducting A/B Testing in order to achieve Goal 1.
 <br><br>
