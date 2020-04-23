@@ -38,7 +38,7 @@ We can see that there are about 7 departments have the highest sales compared to
 ## Macro Data 
 Macro data are the data in the feature data set. Because the data in this data set describes the enviornment observation of each store, therefore, I call it Macro data. There are 4 indicators available in the feature data set: median fuel price, median Consumer Price Index (CPI), median unemployment rate, and median temperature. 
 <br>
-<img src="Indicators.png">
+<img src="Indicators.jpg">
 <br>
 The fuel price stays flat below $3 in 2010 and rise above $3 afterward. The fuel price stays the same between $3 and $4 between 2012 and 2013. The median CPI is increasing in a very low rate, while the median unemployment rate is decreasing steadily from 8% to 7% between 2012 and 2013. The median temperature follow the expected season weather.
 

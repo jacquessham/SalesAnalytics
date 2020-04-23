@@ -24,9 +24,8 @@ with Markdowns:    83% R-square
 without Markdowns: 85% R-square
 As the result, it is better to exclude columns of markdowns.
 
+## Verdict
+Based on the result above, we have found that it is better to exclude both "Date" and all markdown columns as part of the features in the prediction model.
+
 ## Next Step
 The next step is to tune the hyperparameter. Click [here](../Tuning) for the Tuning Folder.
-
-## Verdict
-No Date<br>
-No Markdowns

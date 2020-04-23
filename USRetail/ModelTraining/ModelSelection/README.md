@@ -13,15 +13,15 @@ We have the following files:
 ## Package Used
 * Pandas
 * Numpy
-* Sklearn
-** KFold
-** train_test_split
-** LinearRegression
-** SVR
-** DecisionTreeRegressor
-** RandomForestRegressor
-** AdaBoostRegressor
-** GradientBoostingRegressor
+* Sklearn<br>
+** KFold<br>
+** train_test_split<br>
+** LinearRegression<br>
+** SVR<br>
+** DecisionTreeRegressor<br>
+** RandomForestRegressor<br>
+** AdaBoostRegressor<br>
+** GradientBoostingRegressor<br>
 
 ## Hyperparameters used
 * Use K=10 for KFold
