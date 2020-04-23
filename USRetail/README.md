@@ -3,7 +3,7 @@ This part we are going to explore the data in a given US Retail chain. It is the
 <br><br>
 You may find the result in the [Report folder](Report) related to this project.
 <br><br>
-To explore the other parts of the Sales Analytics project, please go back to the <a href="https://github.com/jacquessham/SalesAnalytics">front page]</a> for other parts.
+To explore the other parts of the Sales Analytics project, please go back to the <a href="https://github.com/jacquessham/SalesAnalytics">front page</a> for other parts.
 
 ## Data
 There are 3 files in the data set which came from Kaggle. Those files consists the data of the given US Retail chain between 2010 and 2013.
@@ -32,7 +32,7 @@ There are 4 phases within the model training phases. Please more information or 
 	<li>Explore which features to include or exclude</li>
 	<li>Tune the prediction Model</li>
 </ol>
-Once we have confirmed which algorithm and features to use for the final prediction model, we can build the prediction model. Because most of the features are time-series data, the prediction model also takes account on obtaining the data of such features. You may find more information about it in the [Prediction Model folder](PredictionModel)
+Once we have confirmed which algorithm and features to use for the final prediction model, we can build the prediction model. Because most of the features are time-series data, the prediction model also takes account on obtaining the data of such features. You may find more information about it in the <a href="https://github.com/jacquessham/SalesAnalytics/tree/master/USRetail/PredictionModel">Prediction Model folder</a>
 
 ## Goal 2: Model the effects of markdowns on holiday weeks.
 Another task is to find the effects of markdowns on holiday weeks. In this step, we are going to filter the data set to holiday data and fit this data set to a linear regression model to interpret the effects of markdown promotions. You may find the findings and comments in the [MarkdownModel folder](MarkdownModel)
