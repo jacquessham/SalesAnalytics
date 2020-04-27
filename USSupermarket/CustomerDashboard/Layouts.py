@@ -5,8 +5,7 @@ import dash_html_components as html
 
 
 # Headline, description, layout of the dashboard
-headline = 'Customer Dashboard'
-description = 'Coming Soon...'
+headline = 'Customer Demographic Dashboard'
 axis_title = {'Age': 'Age', 'Gender': 'Gender',
               'AnnualIncome': 'Annual Income ($k)',
               'SpendingScore': 'Spending Score (1-100)'}
@@ -81,9 +80,7 @@ tab3_layout = html.Div([
 			  dcc.RadioItems(
 				  id='box-radio-xaxis',
 				  options=[{'label':'Age', 'value':'Age'},
-				  		   {'label':'Annual Income', 'value':'AnnualIncome'},
-					       {'label':'Gender', 'value':'Gender'},
-					       {'label':'Spending Score', 'value':'score'}],
+					       {'label':'Gender', 'value':'Gender'}],
 				  value='Age',
 				  labelStyle={'display':'block', 'text-align': 'left'})
 			    ], style={'width':'20%','display': 'inline-block',
@@ -91,9 +88,7 @@ tab3_layout = html.Div([
 	html.Div([html.P('Select Y-axis:',style={'text-align': 'left'}),
 			  dcc.RadioItems(
 				  id='box-radio-yaxis',
-				  options=[{'label':'Age', 'value':'Age'},
-				  		   {'label':'Annual Income', 'value':'AnnualIncome'},
-					       {'label':'Gender', 'value':'Gender'},
+				  options=[{'label':'Annual Income', 'value':'AnnualIncome'},
 					       {'label':'Spending Score', 'value':'SpendingScore'}],
 				  value='AnnualIncome',
 				  labelStyle={'display':'block', 'text-align': 'left'})
