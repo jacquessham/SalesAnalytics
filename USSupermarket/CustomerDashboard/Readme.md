@@ -83,3 +83,6 @@ For the scatter plot, it looks like this:
 <br><br>
 For the box plot, it looks like this:
 <img src="Images/box.png">
+
+## Next Step
+In the next phase, we are going to make predictions on what customers purchase based on what they have in the basket. You may find that more in the [Basket Prediction folder (Coming Soon)](/)
