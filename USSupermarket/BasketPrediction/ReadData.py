@@ -6,7 +6,7 @@ def readfiles(filepath):
 	# Read files
 	f = open(filepath,'r')
 	rawtext = f.read().split('\n')
-	rawtext = rawtext[13:22] # Delete later
+	rawtext = rawtext[:500] # Delete later
 
 	# Split each line by comma
 	transactions_str = [] # Store items in string per basket
