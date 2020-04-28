@@ -36,4 +36,4 @@ The Adjusted R-Square of this model is 0.943 which means the model fits very wel
 After we have trained the model, we found that on advertisement spending is effective on increasing profit. We recommend the supermarket stores to increase advertisement spending and limit promotion spending in order to increase profit. If there is an expansion, we recommend the supermarket to set up new store either in California or Florida.
 
 ## Next Step
-In the next step, we are going to make predictions on what customers purchase based on what they have in the basket. You may find that more in the [Basket Prediction folder (Coming Soon)](/)
+In the next phase, we are going to build a dashboard to display the customer demographic for managements to understand the customers data insight. You may find the dashboard in the [Customer Dashboard folder](../CustomerDashboard).

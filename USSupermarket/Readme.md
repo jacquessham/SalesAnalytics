@@ -17,8 +17,8 @@ The data set consists of the following data:<br>
 ## Goals
 1. Find data insights.
 2. Interpret the spending effects on profit.
-3. Predict what customers purchase.
-4. Build a dashboard on supermarket chain finance and customers.
+3. Build a dashboard on supermarket chain customer demographic.
+4. Predict what customers purchase.
 
 ## EDA
 Coming Soon
@@ -27,12 +27,12 @@ Coming Soon
 After looking at the customer data set, I would like to learn more about the relationship between customers and spending score. In this phase, we will raise questions about the business and answer the questions by conducting A/B testing. Please find the findings and result in the [A/B testing folder](Abtesting). The folder includes the python code which conduct A/B testing and result in text files.
 
 ## Interpret the Spending Effects on Profit
-Coming Soon
+The supermarket chain provides a data set on spending and profit of the each store located. We would like to interpret how the spendings have an effect on profit of each store. Please find more detail and interpretation in the [Interpretation folder](Interpretation).
+
+## Build a Dashboard on Supermarket Chain Customer Demographic
+We have built a dashboard for management to look at the customer demographic effectively. Please find more detail and the dashboard screenshot in the [Customer Dashboard folder](CustomerDashboard).
 
 ## Predict what Customers Purchase
-Coming Soon
-
-## Build a Dashboard on Supermarket Chain Finance and Customers
 Coming Soon
 
 ## Report
