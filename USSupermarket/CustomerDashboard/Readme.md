@@ -75,7 +75,8 @@ The only difference among 3 structures is Div for options. For tab2_layout and t
 
 ## Result
 There are 3 screen shot for each visualization. For the bar chart, it looks like this:
-<img src="Images/barchart.png>">
+<br>
+<img src="Images/barchart.png">
 <br><br>
 For the scatter plot, it looks like this:
 <img src="Images/scatter.png">
