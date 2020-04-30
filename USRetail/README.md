@@ -20,7 +20,7 @@ The data set consists of the following data:
 2. Model the effects of markdowns on holiday weeks.
 
 ## EDA
-Used Tableau to find data insight. The data insight maybe found in the [EDA folder](EDA)
+We have used Tableau to find data insight. The data insight maybe found in the [EDA folder](EDA)
 
 ## Goal 1: Predict department-wide sales for each store in 2013 and 2014
 Once we have understood the data insight in EDA, the next step is to use the data set to train the prediction model to achieve this goal. In the Model Training phase, we will explore which algorithm and features to be used in the prediction model. Once we have figured out, we will build a prediction according to the Model Training phase and save the result in csv files in the same format of data from Kaggle.

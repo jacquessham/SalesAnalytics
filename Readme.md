@@ -15,3 +15,9 @@ Please find the detail at [US Retail Analytics](USRetail)
 We will look at a US supermarket and find some data insight and visualize on a dashboard. <br>
 
 Please find the detail at [US Supermarket Analytics](USSupermarket)
+
+## Part 4 - US Car Dealership Analytics
+We will look at a US car dealership and build a sales prediction model for car models. <br>
+
+Please find the detail at [US Car Dealership Analytics](CarSales)
+
