@@ -51,11 +51,11 @@ If the user change the x-axis, it looks like this:
 <br><br>
 When the user include some car makes, the scatter plot becomes:
 <br>
-<images src="Images/Include.png">
+<image src="Images/Include.png">
 <br><br>
 Or if two car makes are excluded from the plot, the scatter plot becomes:
 <br>
-<images src="Images/Exclude.png">
+<image src="Images/Exclude.png">
 
 
 ## Next Step
