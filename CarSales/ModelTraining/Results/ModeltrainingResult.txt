@@ -1,0 +1,19 @@
+****************Linear Regression****************
+The average of the accuracy is: 0.3509
+*************************************************
+
+************Decision Tree Regressor**************
+The the accuracy is: 0.0039
+*************************************************
+
+************Random Forest Regressor**************
+The the accuracy is: 0.0039
+*************************************************
+
+*********Adaptive Boosting Regressor*************
+The the accuracy is: 0.2959
+*************************************************
+
+*********Gradient Boosting Regressor*************
+The the accuracy is: 0.3191
+*************************************************
