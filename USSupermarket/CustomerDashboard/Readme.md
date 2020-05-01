@@ -1,8 +1,27 @@
 # Customer Dashboard
 The goal is to build a dashboard to display the Supermarket Chain Customer Demographic. 
 
-## Background and Strategy
+## Background 
 Although we have obtained some business insight from conducting A/B testing, dashboard is a good tool to have the managers to understand the customer demographic more effectively. In this phase, we will use Dash to build a dashboard to display the visualize the relationship on customer demographic and customers' spending satisation.
+
+## Strategy
+There are 4 features of the customer demographic - age, gender, annual income, and spending score. Age and gender are the features of the customer demographic. Spending score is the KPI of the relationship between customers and sales, therefore, the primary goal is to display the relationship between spending score with other customer features. Annual income is one of the important indicators of grocery spending, so the secondary goal is to understand how customers' income related to grocery spending.
+<br><br>
+In order to achieve these goal, we are going to display the data in 3 types of visualizations:
+<ul>
+	<li>Bar Chart</li>
+	<li>Scatter Plot</li>
+	<li>Box Plot</li>
+</ul>
+
+### Bar Chart
+Bar Chart is able to display the aggregated KPI or indicator data related to customers' features. The bar chart is able briefly display the general relationship between customers' features and KPI or indicator. We are going to allow user to select customers' features (Age and gender) on the x-axis, annual income and spending score on the y-axis on the y-axis, and the metrics for aggregation (Average, median, minimum, maximum, mode). The advantage of this chart is to display discrete data on axis like gender but the disadvantage is that the visualization is lack of the detail of the data set.
+
+### Scatter Plot
+Scatter plot is able to display all data point on the plot and contains all detail in the data set. Users may find the trend and detail of the data set from the scatter plot. Age, annual income, and spending score are available for users to select on either x-axis or y-axis. However, the disadvantage is that the visualization is not good at handling discrete data, so gender is not available for users to select.
+
+### Box Plot
+Box Plot is aimed to provide more detail from bar chart. Box Plot display the aggregated KPI or indicator data related to customers' features, similar to bar chart. The only difference is that box plot is able to display all aggregation metrics in one chart, it means users are able to look at the data distribution related to customers' features in one chart.
 
 ## Files
 There are 2 python files in this folder:
@@ -17,7 +36,7 @@ This is the driver program to run the dashboard. The program contains 3 parts:
 	<li>Dashboard Callbacks</li>
 </ol>
 <br>
-In Data Preparation, the program use Pandas to read csv file, which is the data the program use [Customer data](../Data/Supermarket_CustomerMembers.csv). You may find more detail in the [data folder](../Data). In this program, the layout is defined with only 2 main components: H1 and Tabs. Within Tabs, it contains 3 tabs to represent 3 visualization choices from users. Each tab layout is defined from the <i>Layout.py</i> file. The 3 tabs are:
+In Data Preparation, the program use Pandas to read csv file, which is the data the program use <a href="https://raw.githubusercontent.com/jacquessham/SalesAnalytics/master/USSupermarket/Data/Supermarket_CustomerMembers.csv">Customer data</a>. You may find more detail in the <a href="https://github.com/jacquessham/SalesAnalytics/tree/master/USSupermarket/Data">data folder</a>. In this program, the layout is defined with only 2 main components: H1 and Tabs. Within Tabs, it contains 3 tabs to represent 3 visualization choices from users. Each tab layout is defined from the <i>Layout.py</i> file. The 3 tabs are:
 <ol>
 	<li>Bar Chart</li>
 	<li>Scatter Plot</li>
@@ -34,6 +53,7 @@ There are 3 callback functions to update the visualizations. Each callback funct
 	<li>update_boxplot()</li>
 </ol>
 <br><br>
+
 ### update_barchart()
 This function requires 3 inputs from the Bar Chart tab:
 <ol>
