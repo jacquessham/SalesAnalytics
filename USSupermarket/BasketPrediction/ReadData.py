@@ -6,7 +6,6 @@ def readfiles(filepath):
 	# Read files
 	f = open(filepath,'r')
 	rawtext = f.read().split('\n')
-	rawtext = rawtext[:500] # Delete later
 
 	# Split each line by comma
 	transactions_str = [] # Store items in string per basket
@@ -32,10 +31,10 @@ def readfiles(filepath):
 		transactions_num.append(temp_list)
 
 	products_num = len(product2num) # Obtain the length of items list
-	transaction_tabluar = [] # For convert to one-hot-encoding
+	transaction_tabluar = [] # For convert to categorical columns
 	transaction_len = [] # For obtain the number of items per basket
 
-	# To convert items to one-hot-encoding and number of items per basket
+	# To convert items to categorical columns and number of items per basket
 	for tran in transactions_num:
 		temp_list = [1 if curr in tran else 0 for curr in range(products_num)]
 		transaction_tabluar.append(temp_list)
@@ -46,10 +45,8 @@ def readfiles(filepath):
 	transaction_tabluar['Items_Count'] = transaction_len
 
 	return {'transaction_tabluar': transaction_tabluar,
-	        'cols': cols, 'transaction_len': transaction_len,
+	        'cols': cols,
 	        'product2num': product2num, 'num2product': num2product,
-	        'transactions_num': transactions_num,
-	        'transactions_str': transactions_str,
 	        'products_num': products_num}
 
 

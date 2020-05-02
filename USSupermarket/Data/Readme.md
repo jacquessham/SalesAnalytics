@@ -13,7 +13,7 @@ It contains the information of 50 supermarkets and including the following colum
 Click-through Rates (CTR) from 10000 users in 10 different advertisements. Each column represents an advertisement campaign.
 
 ## MarketBasketOptimisation.csv
-It contains what products were purchased in each transaction. It contains 7500 sales transactions in a given week. Each row represents a transaction and contain products separated by a comma. The data set is not in a tabular shape.
+It contains what products were purchased in each transaction. It contains 7500 sales transactions in a given week. Each row represents a transaction and contain products separated by a comma. The data set is not in a tabular shape. We will call this basket data set.
 
 ## Supermarket_CustomerMembers.csv
 It contains 5 columns and 200 customers profiles and the following columns:

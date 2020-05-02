@@ -38,4 +38,7 @@ Once we have confirmed which algorithm and features to use for the final predict
 Another task is to find the effects of markdowns on holiday weeks. In this step, we are going to filter the data set to holiday data and fit this data set to a linear regression model to interpret the effects of markdown promotions. You may find the findings and comments in the [MarkdownModel folder](MarkdownModel)
 
 ## Report
-The report folder contains a formal summary of this project, including the steps conducted and the findings. You may learn more about it in the [Report folder](Report)
+The report folder contains a formal summary of this project, including the steps conducted and the findings. You may learn more about it in the [Report folder](Report).
+
+## Next Part
+In the next part, we will look at a US supermarket to help the management to make analysis and develop dashboards to make data-driven decisions. You may click <a href="https://github.com/jacquessham/SalesAnalytics/tree/master/USSupermarket">here</a> to find more about next part.
