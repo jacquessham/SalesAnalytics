@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-def getProb(df, items, products_num):
+def getProb(df, items):
 	df_item = df
 	# If nothing is select, or no prior
 	if items is not None:
@@ -32,10 +32,8 @@ def getProb(df, items, products_num):
 	# Calculate probability of number of items in basket
 	df_basketnum = df_item
 	df_basketnum = df_basketnum[df_basketnum['Items_Count']>=len(items)]
-	print(df_basketnum)
 	df_basketnum_rows = df_basketnum.shape[0]
 	basketnum = df_basketnum['Items_Count'].value_counts().to_dict()
-	print(basketnum)
 	result_basketnum = {}
 	for num in basketnum:
 		result_basketnum[num] = (basketnum[num]*1.0)/df_basketnum_rows

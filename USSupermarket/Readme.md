@@ -1,9 +1,7 @@
 # US Supermarket Analytics
-In this part we are going to explore the data in a given US supermarket chain. This is the third part of the Sales Analytics project.
+In this part we are going to explore the data in a given US supermarket chain to make analysis and develop dashboards to help the management to make data-driven decisions. This is the third part of the Sales Analytics project.
 <br><br>
-You may find the [result here (Coming Soon)](/).
-<br><br>
-To explore the other parts of the Sales Analytics project, please go back to the [front page](..) for other parts.
+To explore the other parts of the Sales Analytics project, please go back to the <a href="https://github.com/jacquessham/SalesAnalytics">front page</a> for other parts.
 
 ## Data
 There are 4 files in this part is originated from <a href="https://www.kaggle.com/sindraanthony9985/marketing-data-for-a-supermarket-in-united-states#Supermarket_CustomerMembers.csv">Kaggle</a>. Those files are about a US Supermarket chain between on sales, marketing, and customers data between 2008 and 2016. You may find more detail on the data set [here](Data)
@@ -33,7 +31,10 @@ The supermarket chain provides a data set on spending and profit of the each sto
 We have built a dashboard for management to look at the customer demographic effectively. Please find more detail and the dashboard screenshot in the [Customer Dashboard folder](CustomerDashboard).
 
 ## Predict what Customers Purchase
-Coming Soon
+The supermarket wants to understand what the customers put in their basket. In this phase, we will predict what customers purchase based on what the customers historically purchase in the basekets and display the result on a dashboard. Please find more detail and the dashboard screenshot in the [Basket Prediction folder](BasketPrediction).
 
-## Report
-Coming Soon
+## Conclusion
+In this part of the project, we have helped management to optimize sales by A/B testing, interpretation of spending effects, and develop dashboards to help understand the data insight. The core of this part of project is to use different approach to help management to make data-driven business decision, and I believe we have achieved our goals. Although this part of the project is made for hypothetical situation, the findings and tools developed are helpful for the management of the US supermarket chain.
+
+## Next Part
+In the next part, we will be looking at the data of a US car dealership and make prediction on car sales. You may click <a href="https://github.com/jacquessham/SalesAnalytics/tree/master/CarSales">here</a> for more detail.

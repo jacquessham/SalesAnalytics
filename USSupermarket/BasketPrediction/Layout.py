@@ -41,4 +41,11 @@ def getBarChart(results, pos='left'):
 	return {'data':data, 'layout':layout}
 
 headline = 'Basket Prediction'
-direction = 'Coming soon...'
+direction = '''
+	This dashboard is to predict what customers would buy given what
+	they have put in the basket. You may select the items and obtain
+	the probability of what items the customers would put next in the
+	basket and the probability of how many items they would have in
+	the basket. You may select the available items in the following
+	dropdown list. You may select more than 1 item. 
+'''

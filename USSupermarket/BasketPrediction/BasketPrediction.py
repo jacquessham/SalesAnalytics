@@ -10,15 +10,6 @@ from Prediction import *
 
 filepath = '../Data/Market_Basket_Optimisation.csv'
 data_dict = readfiles(filepath)
-"""
-target = 'turkey'
-# print(data_dict['transaction_tabluar'][target].tolist())
-turkey_probs = getProb(data_dict['transaction_tabluar'],target, 
-	                   data_dict['products_num'])
-turkey_probs = [(key,turkey_probs[key]) for key in turkey_probs]
-turkey_probs = sorted(turkey_probs, key=lambda elem: elem[1], reverse=True)
-print(turkey_probs[:5])
-"""
 
 
 # Dashboard options set up
@@ -31,19 +22,21 @@ app = dash.Dash()
 app.layout = html.Div([
 	html.H1(children=headline, style={'text-align':'center'}),
 	# Position 0, headline
-	html.P(children=direction),
+	html.P(children=direction, style={'width':'80%','margin':'auto'}),
 	# Position 1, direction,
+	html.Br(),
+	# Position 2, next line
 	html.Div(children=get_div_dropdown(products_avail)),
-	# Position 2, div for dropdown
+	# Position 3, div for dropdown
 	html.Div(children=get_div_vis())
-	# Position 3, div for visualization
+	# Position 4, div for visualization
 	])
 
 @app.callback([Output('left-vis','figure'), Output('right-vis','figure')],
 	          [Input('item-dropdown','value')])
 def display_graph(items):
 	result_items, result_basketnum = getProb(data_dict['transaction_tabluar'],
-		                                     items, data_dict['products_num'])
+		                                     items)
 	# Sort the items by highest probability
 	result_items = [(k, result_items[k]) for k in result_items]
 	result_items = sorted(result_items, key=lambda elem: elem[1], 
