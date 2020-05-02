@@ -16,7 +16,7 @@ The data set available in this part:
 We have use Plotly to build visualization to explore the data insight and embedded in Dash in a markdown format. The data insight may be found in the [EDA folder](EDA)
 
 ## Dashboard
-We have built a dashboard for management to look at the relationship between car sales with car features of cars available in the car dealership with Dash. You may find more detail and the dashboard screenshot in the [Dashboard folder](Dashboard)
+We have built a dashboard for management to look at the relationship between car sales and car features of car models available in the car dealership with Dash. You may find more detail and the dashboard screenshot in the [Dashboard folder](Dashboard)
 
 ## Prediction Model
 There is 2 phases for making a prediction model: Modeling Training and Making Prototype Prediction Model. In the modeling training phase, we are going to find out the best algorithm for the prediction model. Once we have figured out and built the prototype prediction model, we will obtain 2 car models not available in the data set to make prediction. You may find the Model Training phase in the [Model Training folder](ModelTraining), or find the prototype predition model in the [Prediction Model folder](PredictionModel).

@@ -1,9 +1,19 @@
 # Exploratory Data Analysis
-Coming Soon...
+The EDA phase is to understand the data insight in the original data set in order to help make analysis on car sales and pick features to build prediction model.
+<br><br>
+The analysis will be displayed in the <i>Result</i> section or you may run the dashboard on your own to find the analysis. 
 
 ## Background and Strategy
+We have a car sales data set from a US car dealership from Kaggle. In this phase, our goal is to understand the data distribution of the data set to help us to build adashboard and a prediction model for management purpose. We would use Plotly to build visualization and embedded in Dash in a markdown format. 
 
 ## Files
+We have 2 python files and 11 images (In the Images folder). The Python files are:
+<ol>
+	<li>Carsales_eda.py - Driver Program</li>
+	<li>Layout.py - Helper code for Carsales_eda.py</li>
+</ol>
+<br>
+Carsales_eda.py is the driver program to display the analysis in a markdown format dashboard by Dash. This program first manipulate and engineer the data, then set up the dashboard base layout. The program relies on Layout.py to define the detail layout of each component. All the text related to description and analysis are saved in Layout.py, as well as the function to generate Plotly charts. Note that the graphs are static, therefore, there is no callback function set in this program.
 
 ## Result
 The first step on making prediction model of car sales is to
@@ -171,3 +181,6 @@ with sales. Wheelbase and length are important features
 affect car sales, followed by list price. Now, we can
 use these result to select feature in the model training
 phase.
+
+## Next Step
+The next step is to build a dashboard for management to look at the relationship between car sales and car features of car models available in the car dealership. You may find more detail and the dashboard screenshot in the [Dashboard folder](../Dashboard)
