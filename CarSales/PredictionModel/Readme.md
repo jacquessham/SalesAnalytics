@@ -48,7 +48,7 @@ Sales_k is selected for the response variable. In order to prevent negative pred
 In the prediction feature data set, we have features of BMW Z4 and Toyota Prius. The model predicts the lifetime car sales of these models be:
 <ul>
 	<li>BMW Z4: 3,467 units</li>
-	<li>Toyota Prius: 28.24 units</li>
+	<li>Toyota Prius: 28,240 units</li>
 </ul>
 Note that, if we did not take a natural log of Sales_k in the training data set, the prediction of BMW Z4 is a negative number which does not make sense. Therefore, the result shows that it is necessary to take natural log for Sales_k in order for the model produces positive number prediction.
 
