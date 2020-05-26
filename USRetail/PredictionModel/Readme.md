@@ -80,7 +80,7 @@ The program identifies the data for each store, then it creates a Store object w
 When the program is done creating all Store objects and the prediction, the driver program will obtain the prediction from all Store objects and save the prediction in csv files, same as feature data file and sales data file.
 
 ## Result
-You may find the result in csv files in the [Results folder](/Results)
+You may find the result in csv files in the [Results folder](Results)
 
 ## Thought on the Result
 The weekly sales does not vary too much that I suspect the model may be overfitted. There may be more work could be done to make the model is more useful. However, I think this model has achieve our goal making prediction on department-wide weekly sales of all department in all stores. 

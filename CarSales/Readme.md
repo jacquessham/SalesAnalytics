@@ -1,4 +1,4 @@
-# Part 4 - US Car Dealership Analytics
+# Part 5 - US Car Dealership Analytics
 In this part, we are going to explore the data given from a US car dealership and make prediction on car sales. This is the fourth part of the Sales Analytics project.
 
 ## Data

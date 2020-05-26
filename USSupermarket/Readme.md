@@ -1,4 +1,4 @@
-# US Supermarket Analytics
+# Part 4 - US Supermarket Analytics
 In this part we are going to explore the data in a given US supermarket chain to make analysis and develop dashboards to help the management to make data-driven decisions. This is the third part of the Sales Analytics project.
 <br><br>
 To explore the other parts of the Sales Analytics project, please go back to the <a href="https://github.com/jacquessham/SalesAnalytics">front page</a> for other parts.
