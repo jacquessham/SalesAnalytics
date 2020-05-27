@@ -12,8 +12,11 @@ Although the prediction model achieved 86.51% R-Square after tuning, the predict
 ## Model Training
 We have explore the data set in Part 2 already so we have so idea of how is the data set looks like, you may find the detail in the [EDA folder](../USRetail/EDA) in Part 2. Similar to the Model Training phase in Part 2, we will explore which algorithm to be used in the prediction model with different standards to prevent high bias of the prediction model. You may find the detail in the [Model Training folder](ModelTraining). A dashboard to visualize the findings may also be found in this folder.
 <br><br>
-As the result, random forest regressor, and gradient boosting have achieved the highest accuracy. Since a model trained with random forest regressor is easier to maintain, the final prediction model will be trained with random forest regressor.
+As the result, random forest regressor, and gradient boosting have achieved the highest accuracy. Since a model trained with gradient boosting model is able to capture seasonality better, the final prediction model will be trained with gradient boosting.
 
 ## Final Prediction Model
-Coming Soon...
+The final refined prediction model is built to replace the old prediction model. The structure is similar to the old prediction model to prepare feature data but the feature data will be trained with gradient boosting. The prediction looks more useful than the old prediction model. You may more detail about the refined prediction model and the visualization of the prediction in the [Final Prediction Model](RefinedModel).
+
+## Next Part
+In the next part, we will look at a US supermarket to help the management to make analysis and develop dashboards to make data-driven decisions. You may click <a href="https://github.com/jacquessham/SalesAnalytics/tree/master/USSupermarket">here</a> to find more about next part.
 

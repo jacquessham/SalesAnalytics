@@ -41,4 +41,5 @@ Another task is to find the effects of markdowns on holiday weeks. In this step,
 The report folder contains a formal summary of this project, including the steps conducted and the findings. You may learn more about it in the [Report folder](Report).
 
 ## Next Part
-In the next part, we will look at a US supermarket to help the management to make analysis and develop dashboards to make data-driven decisions. You may click <a href="https://github.com/jacquessham/SalesAnalytics/tree/master/USSupermarket">here</a> to find more about next part.
+In the effort to improve the usefulness prediction model, the next part will be focused to refine the prediction model and visualize the prediction on a dashboard for the management. You may find more detail about next part in the [US Retail Analytics Version 2 folder](../USRetail_v2)
+

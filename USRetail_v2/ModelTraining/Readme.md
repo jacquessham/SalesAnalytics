@@ -1,5 +1,5 @@
 # Model Training
-Similar to the Model Training phase in Part 2, we will explore which algorithm to be used in the prediction model with different standards to prevent high bias of the prediction model. In this phase, we are also going to build a dashboard to visualizate the prediction made from the models trained with the selected algorithms.
+Similar to the Model Training phase in Part 2, we will explore which algorithm to be used in the prediction model with different standards to prevent high bias of the prediction model. In this phase, we are also going to build a dashboard to visualize the prediction made from the models trained with the selected algorithms.
 
 ## Goal
 Our goal is to build a sales predictive model to replace the prediction model in Part 2. The predictive model should be able to capture trend and seasonality patterns, and be useful for forecasting future sales.
@@ -65,11 +65,11 @@ The dashboard is ran by <i>Dashboard_modelsPred.py</i> which visualize the sales
 <br><br>
 The dashboard by default goes to Tab 1, which visualize the overall sales across all store. The line chart visualizes both training data and prediction. The user may change the algorithm in the drop down box below the title, the line chart will update the prediction line from the data made from that model. It looks like this:
 <br>
-<img src="tab1.png">
+<img src="Results/tab1.png">
 <br><br>
 Tab 2 visualizes the prediction of individual store. There is an extra drop down list to select the store in the US Retail chain, the line chart will visualize both training data and prediction accordingly. Like Tab 1, users may change the algorithm to update the prediction data. It looks like this:
 <br>
-<img src="tab2.png">
+<img src="Results/tab2.png">
 
 
 ## Results
@@ -90,27 +90,27 @@ The accuracy of the models are:
 ### Evaluation with Visualization
 The overall sales and Store 5 sales predicted by Linear Regression Model:
 <br>
-<img src="overall_lr.png">
+<img src="Results/overall_lr.png">
 <br>
-<img src="store5_lr.png">
+<img src="Results/store5_lr.png">
 <br><br>
 The overall sales and Store 5 sales predicted by Random Forest Regressor Model:
 <br>
-<img src="overall_rf.png">
+<img src="Results/overall_rf.png">
 <br>
-<img src="store5_rf.png">
+<img src="Results/store5_rf.png">
 <br><br>
 The overall sales and Store 5 sales predicted by Adaptive Boosting Model:
 <br>
-<img src="overall_adaboost.png">
+<img src="Results/overall_adaboost.png">
 <br>
-<img src="store5_adaboost.png">
+<img src="Results/store5_adaboost.png">
 <br><br>
 The overall sales and Store 5 sales predicted by Gradient Boosting Model:
 <br>
-<img src="overall_xgboost.png">
+<img src="Results/overall_xgboost.png">
 <br>
-<img src="store5_xgboost.png">
+<img src="Results/store5_xgboost.png">
 
 ### Evaluation on Linear Regression Model
 This model was able to capture the trend and seasonality pattern but the accuracy score is relatively low. Looking at the line chart, we can see the prediction is consistently off from the training data. The R-square is 42.66% which is a good benchmark for baseline model.
@@ -132,7 +132,7 @@ This model has achieved 86.54% R-square which ranks the 3rd among 5 algorithms. 
 
 
 ## Verdict
-Coming Soon..
+After comparing the R-square and the prediction visualization among all 5 models, Random Forest Regressor model and the Gradient Boosting Model are the best candidate to be our final model to replace the previous prediction model. Although the random forest regressor model has achieved a higher accuracy score by about 1% R-squared, the gradient boosting model is able to capture the seasonality better (If you look at the low season, the prediction fits close from the gradient boosting model). Therefore, we will train the refinded prototype prediction model with gradient boosting model.
 
 ## Next Step
-After we have selected the algorithm to train the prediction model, we are going to build the refined prototype prediction model. You may find the detail in the [Refined folder](../RefinedModel).
+After we have selected the algorithm to train the prediction model, we are going to build the refined prediction model. You may find the detail in the [Refined folder](../RefinedModel).
