@@ -47,7 +47,7 @@ class Store:
 		dept_list = self.deptDisb.keys()
 		prediction = {'Store':[], 'Dept':[],'Date':[],
 		              'Weekly_Sales':[], 'IsHoliday':[]}
-		df_pred = self.getStorePred()
+		df_pred = self.getYPred()
 		for dept in dept_list:
 			dept_proportion = self.deptDisb[dept]
 			for date in date_list:
