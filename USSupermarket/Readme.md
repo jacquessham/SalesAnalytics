@@ -19,7 +19,7 @@ The data set consists of the following data:<br>
 4. Predict what customers purchase.
 
 ## EDA
-Coming Soon
+The first step is to explore the data set, you may find more details on the [EDA folder](EDA).
 
 ## A/B Testing
 After looking at the customer data set, I would like to learn more about the relationship between customers and spending score. In this phase, we will raise questions about the business and answer the questions by conducting A/B testing. Please find the findings and result in the [A/B testing folder](Abtesting). The folder includes the python code which conduct A/B testing and result in text files.
@@ -37,4 +37,4 @@ The supermarket wants to understand what the customers put in their basket. In t
 In this part of the project, we have helped management to optimize sales by A/B testing, interpretation of spending effects, and develop dashboards to help understand the data insight. The core of this part of project is to use different approach to help management to make data-driven business decision, and I believe we have achieved our goals. Although this part of the project is made for hypothetical situation, the findings and tools developed are helpful for the management of the US supermarket chain.
 
 ## Next Part
-In the next part, we will be looking at the data of a US car dealership and make prediction on car sales. You may click <a href="https://github.com/jacquessham/SalesAnalytics/tree/master/CarSales">here</a> for more detail.
+In the next part, we will be looking at the data of a US car dealership and make prediction on car sales. You may find more details in the  <a href="https://github.com/jacquessham/SalesAnalytics/tree/master/CarSales">Part 5 - US Car Dealership Analytics folder</a> for more detail.
