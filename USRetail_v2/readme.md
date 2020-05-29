@@ -4,7 +4,7 @@ After building a sales prediction model in Part 2 for a US Retail chain, the res
 ## Background
 The sales prediction model in Part 2 for a US Retail chain is not useful enough of forecasting future sales of each store. After visualizating the prediction, I have realized the prediction model was not able to capture the trend nor seasonality of the sales. Although the predictive model achieved a very high R-square accuracy, I believe the model was overfitted to the training data set. Take Store 1 for example, the sales prediction made for Store 4 looks like this:
 <br>
-<img src="Background/store.png">
+<img src="Background/store1.png">
 <br>
 <br>
 Although the prediction model achieved 86.51% R-Square after tuning, the prediction plot is flat and the model seems to have very high bias. In the effort of make high-quality sales forecast, we shall rebuild the sales prediction model which is able to capture trend and seasonality of the sales pattern. You may go to the [Background folder](Background) to learn more about the background of this part of the project and the dashboard to visualize the prediction made in Part 2.

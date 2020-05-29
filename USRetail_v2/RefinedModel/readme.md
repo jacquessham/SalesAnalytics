@@ -39,7 +39,10 @@ The program identifies the data for each store, then it creates a Store object w
 When the program is done creating all Store objects and the prediction, the driver program will obtain the prediction from all Store objects and save the prediction in csv files, same as feature data file and sales data file. The dashboard will read those csv files to visualize the result afterward.
 
 ## Dashboard
-Coming Soon...
-
-## Thought
-Coming Soon...
+<i>Visualization_PredictedPrice.py</i> powers the dashboard and visualize the result findings. The program only visualize the prediction for 1 stock, the ticker must be changed in the code. The dashboard is for developer's use, so I did not build the dynamic selection on stocks. 
+<br><br>
+Prediction on General Eletrics (GE):
+<img src="ge.png">
+<br><br>
+Prediction on Microsoft (MSFT):
+<img src="msft.png">
